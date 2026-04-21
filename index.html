@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acasă | Awesome-GIM</title>
+  <meta name="description" content="Awesome-GIM din Rădăuți — sala de fitness pentru tineri și adulți. Antrenament personal, cursuri de grup, masaj și kinetoterapie." />
+  <meta property="og:title" content="Acasă | Awesome-GIM" />
+  <meta property="og:description" content="Awesome-GIM din Rădăuți — sala de fitness pentru tineri și adulți. Antrenament personal, cursuri de grup, masaj și kinetoterapie." />
+  <meta property="og:image" content="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3/1776778508767.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778512224.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0EA5E9",
+            secondary: "#94A3B8",
+            accent: "#0369a1",
+            light: "#f5f5f5",
+            dark: "#0c0e13",
+          },
+          backgroundImage: {
+            "dark-radial-right": "radial-gradient(at center right, #0a2233 10%, #020307 75%)",
+            "dark-radial-left": "radial-gradient(at center left, #0a2233 10%, #020307 75%)",
+            "dark-radial-top": "radial-gradient(at top center, #0a2233 10%, #020307 75%)",
+            "dark-radial-bottom": "radial-gradient(at bottom center, #0a2233 10%, #020307 75%)",
+            "dark-silver-radial": "radial-gradient(at center, #1a1a1a 10%, #2a2a2a 90%)",
+            "card-dark": "linear-gradient(180deg, #1a1f2b 0%, #0c0e13 100%)",
+            "card-dark-hover": "linear-gradient(180deg, #2a3040 0%, #1a1f2b 100%)",
+            "primary-blend": "linear-gradient(135deg, #0EA5E9 0%, #020307 100%)",
+            "accent-blend": "linear-gradient(135deg, #0369a1 0%, #000000 100%)",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-dark text-light font-serif">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar-glass fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778512224.png" alt="Awesome-GIM Logo" class="h-10 w-auto" />
+        </a>
+        <!-- Desktop links -->
+        <div class="hidden md:flex items-center gap-7">
+          <a href="index.html" class="nav-link text-light text-sm font-semibold tracking-wide">Acasă</a>
+          <a href="about.html" class="nav-link text-light text-sm font-semibold tracking-wide">Despre</a>
+          <a href="services.html" class="nav-link text-light text-sm font-semibold tracking-wide">Servicii</a>
+          <a href="galerie.html" class="nav-link text-light text-sm font-semibold tracking-wide">Galerie</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-5">Contact</a>
+        </div>
+        <!-- Hamburger -->
+        <button id="hamburger" class="md:hidden flex flex-col justify-center items-center w-9 h-9 gap-1.5 hamburger-lines" aria-label="Meniu" aria-expanded="false">
+          <span class="w-6"></span>
+          <span class="w-6"></span>
+          <span class="w-6"></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu">
+      <a href="index.html" class="nav-link">Acasă</a>
+      <a href="about.html" class="nav-link">Despre</a>
+      <a href="services.html" class="nav-link">Servicii</a>
+      <a href="galerie.html" class="nav-link">Galerie</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section" style="background-image: url('https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3/1776778508767.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content max-w-4xl mx-auto px-4 text-center">
+      <div class="section-badge fade-in">🏋️ Sala #1 din Rădăuți</div>
+      <h1 class="fade-in text-5xl md:text-7xl font-bold text-white mt-4 mb-6 leading-tight" style="text-shadow:0 2px 24px rgba(0,0,0,0.6);">
+        Construiește<br/><span class="text-primary">Corpul Visurilor</span><br/>Tale
+      </h1>
+      <p class="fade-in text-xl md:text-2xl text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
+        Awesome-GIM — locul unde tinerii devin campioni și adulții redescoperă energia. Antrenamente de excepție, echipamente moderne, rezultate reale.
+      </p>
+      <div class="fade-in flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn-primary text-base px-8 py-3">Începe Acum</a>
+        <a href="services.html" class="btn-secondary text-base px-8 py-3">Descoperă Serviciile</a>
+      </div>
+      <p class="fade-in text-secondary text-sm mt-6">📍 Str. Ștefan cel Mare Nr.88, Rădăuți &nbsp;|&nbsp; 🕐 Luni–Duminică 7:00–22:00</p>
+    </div>
+    <!-- Scroll caret -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+      <svg width="28" height="28" fill="none" stroke="#0EA5E9" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- PARTNERS CAROUSEL -->
+  <section class="py-12 bg-dark-radial-bottom overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 mb-6 text-center fade-in">
+      <p class="text-secondary text-sm font-semibold uppercase tracking-widest">Parteneri & Colaboratori</p>
+    </div>
+    <div class="overflow-hidden w-full">
+      <div class="partners-track">
+        <div class="partner-item">💪 NutriPro România</div>
+        <div class="partner-item">🏃 RunFast Club</div>
+        <div class="partner-item">🥗 FreshLife Foods</div>
+        <div class="partner-item">🧘 ZenBalance Studio</div>
+        <div class="partner-item">🩺 PhysioMed Rădăuți</div>
+        <div class="partner-item">🥊 Combat Sport Academy</div>
+        <div class="partner-item">🏅 SportsVest România</div>
+        <div class="partner-item">💊 VitaFit Supplements</div>
+        <!-- Duplicate for infinite loop -->
+        <div class="partner-item">💪 NutriPro România</div>
+        <div class="partner-item">🏃 RunFast Club</div>
+        <div class="partner-item">🥗 FreshLife Foods</div>
+        <div class="partner-item">🧘 ZenBalance Studio</div>
+        <div class="partner-item">🩺 PhysioMed Rădăuți</div>
+        <div class="partner-item">🥊 Combat Sport Academy</div>
+        <div class="partner-item">🏅 SportsVest România</div>
+        <div class="partner-item">💊 VitaFit Supplements</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS / NUMBERS -->
+  <section class="py-20 bg-dark-radial-top">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <div class="section-badge">Cifre Reale</div>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-3">Rezultatele Vorbesc<br/><span class="text-primary">de la Sine</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="stat-card fade-in">
+          <div class="stat-number counter" data-target="8" data-suffix="+">0+</div>
+          <p class="text-secondary text-sm mt-2 font-semibold">Ani de Experiență</p>
+        </div>
+        <div class="stat-card fade-in">
+          <div class="stat-number counter" data-target="1200" data-suffix="+">0+</div>
+          <p class="text-secondary text-sm mt-2 font-semibold">Membri Activi</p>
+        </div>
+        <div class="stat-card fade-in">
+          <div class="stat-number counter" data-target="7" data-suffix="">0</div>
+          <p class="text-secondary text-sm mt-2 font-semibold">Antrenori Certificați</p>
+        </div>
+        <div class="stat-card fade-in">
+          <div class="stat-number counter" data-target="98" data-suffix="%">0%</div>
+          <p class="text-secondary text-sm mt-2 font-semibold">Clienți Mulțumiți</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-20 bg-dark-radial-bottom">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <div class="section-badge">De Ce Noi?</div>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-3">De Ce Să Alegi<br/><span class="text-primary">Awesome-GIM?</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div class="why-card fade-in">
+          <div class="text-4xl mb-4">🏋️</div>
+          <h3 class="text-white font-bold text-lg mb-2">Echipamente Moderne</h3>
+          <p class="text-secondary text-sm leading-relaxed">Aparatură de ultimă generație, întreținută permanent pentru siguranța și performanța ta maximă.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="text-4xl mb-4">👨‍🏫</div>
+          <h3 class="text-white font-bold text-lg mb-2">Antrenori Certificați</h3>
+          <p class="text-secondary text-sm leading-relaxed">Echipa noastră de profesioniști îți creează un program personalizat adaptat obiectivelor tale.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="text-4xl mb-4">🧘</div>
+          <h3 class="text-white font-bold text-lg mb-2">Masaj & Kinetoterapie</h3>
+          <p class="text-secondary text-sm leading-relaxed">Servicii premium de recuperare — masaj terapeutic și kinetoterapeut colaborator, disponibile la cerere.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="text-4xl mb-4">🥗</div>
+          <h3 class="text-white font-bold text-lg mb-2">Coaching Nutrițional</h3>
+          <p class="text-secondary text-sm leading-relaxed">Planuri nutriționale personalizate care completează antrenamentele și accelerează rezultatele.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="text-4xl mb-4">🕐</div>
+          <h3 class="text-white font-bold text-lg mb-2">Program Extins</h3>
+          <p class="text-secondary text-sm leading-relaxed">Deschis 7 zile din 7, între 7:00 și 22:00 — vinei când ți-e convenabil, fără restricții.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-white font-bold text-lg mb-2">Abonamente Flexibile</h3>
+          <p class="text-secondary text-sm leading-relaxed">Opțiuni pentru studenți, elevi și seniori — prețuri accesibile, fără compromisuri la calitate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20 bg-dark-radial-top">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <div class="section-badge">Recenzii</div>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-3">Ce Spun<br/><span class="text-primary">Membrii Noștri</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <div class="testimonial-card p-7 fade-in">
+          <div class="stars mb-3">★★★★★</div>
+          <p class="text-secondary text-sm leading-relaxed mb-6">"Am început acum 6 luni ca un student fără experiență. Astăzi mă simt complet transformat. Antrenorii sunt incredibil de dedicați, iar atmosfera din sală te motivează instant. Recomand din toată inima!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg">A</div>
+            <div>
+              <p class="text-white font-semibold text-sm">Alexandru M.</p>
+              <p class="text-secondary text-xs">Student, 21 ani</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card p-7 fade-in">
+          <div class="stars mb-3">★★★★★</div>
+          <p class="text-secondary text-sm leading-relaxed mb-6">"La 52 de ani am decis să am grijă de sănătatea mea. Kinetoterapeutul și masajul terapeutic au făcut minuni pentru durerile mele de spate. Personalul este extrem de profesionist și răbdător."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-accent flex items-center justify-center text-white font-bold text-lg">M</div>
+            <div>
+              <p class="text-white font-semibold text-sm">Maria D.</p>
+              <p class="text-secondary text-xs">Membră Senior, 52 ani</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card p-7 fade-in">
+          <div class="stars mb-3">★★★★★</div>
+          <p class="text-secondary text-sm leading-relaxed mb-6">"Cursurile de grup sunt fenomenale! Instructorii sunt energici, muzica perfectă și colectivul super prietenos. Am slăbit 12 kg în 4 luni urmând planul nutrițional împreună cu antrenamentele de grup."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg">I</div>
+            <div>
+              <p class="text-white font-semibold text-sm">Ioana P.</p>
+              <p class="text-secondary text-xs">Membră Activă, 28 ani</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-20 bg-primary-blend">
+    <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+      <div class="section-badge">Pregătit?</div>
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-4 mb-5">Începe Transformarea<br/>Ta Astăzi!</h2>
+      <p class="text-blue-100 text-lg mb-9 max-w-2xl mx-auto leading-relaxed">Primul pas e cel mai important. Vino la o sesiune de probă gratuită și descoperă de ce sute de rădăuțeni au ales Awesome-GIM.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn-primary bg-white text-primary border-2 border-white hover:bg-gray-100 text-base px-9 py-3" style="color:#0EA5E9;background:white;">Contactează-ne</a>
+        <a href="tel:+472999999" class="btn-secondary border-white text-white hover:bg-white hover:text-primary text-base px-9 py-3" style="border-color:white;color:white;">📞 +472 999 999</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-dark-radial-bottom">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <div class="section-badge">FAQ</div>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-3">Întrebări<br/><span class="text-primary">Frecvente</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Ce tipuri de abonamente oferiți?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Oferim abonamente lunare, trimestriale și anuale, cu prețuri speciale pentru elevi și studenți. Există și opțiunea de abonament pentru acces zilnic sau săptămânal, ideal pentru cei cu program mai flexibil. Contactați-ne pentru detalii privind tarifele actualizate.
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Pot veni la o sesiune de probă gratuită?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Da! Oferim o primă sesiune de probă complet gratuită pentru toți cei care vor să descopere sala noastră. Rezervați prin telefon sau prin formularul de contact, iar noi vă vom pregăti totul. Nu aveți nevoie de echipament special pentru prima vizită.
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Ce servicii de recuperare oferiți?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Pe lângă antrenamentele clasice, colaborăm cu un maseur terapeut și un kinetoterapeut de specialitate. Aceste servicii sunt disponibile la un cost suplimentar față de abonamentul standard și necesită programare prealabilă. Sunt ideale pentru recuperare după accidentări sau pentru îmbunătățirea mobilității.
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Este potrivit pentru începători?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Absolut! Awesome-GIM este conceput pentru toate nivelele de pregătire fizică. Antrenorii noștri certificați evaluează fiecare nou membru și creează un program adaptat nivelului și obiectivelor personale. Nu există vârstă sau condiție fizică de start nepotrivită.
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Există cursuri de grup? Ce stiluri?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Da, avem un program bogat de cursuri de grup: Zumba, Body Combat, Yoga, Pilates, Spinning și CrossFit. Cursurile au loc zilnic la ore fixe, iar programul este disponibil la recepție sau online. Locurile sunt limitate, deci recomandăm rezervare din timp.
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Aveți facilități de parcare și duș?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Da, sala dispune de vestiare moderne cu dușuri separate pentru bărbați și femei, dulapuri individuale cu lacăt și facilități complete. Parcare gratuită disponibilă în fața sălii. Avem și o zonă de relaxare unde vă puteți reîncărca după antrenament.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-16 bg-dark-radial-top">
+    <div class="max-w-3xl mx-auto px-4 text-center fade-in">
+      <div class="service-card p-10 inline-block w-full">
+        <div class="text-5xl mb-4">💬</div>
+        <h3 class="text-white text-2xl font-bold mb-3">Nu ai găsit răspunsul?</h3>
+        <p class="text-secondary mb-7 leading-relaxed">Echipa noastră este disponibilă zilnic să răspundă oricăror întrebări. Scrie-ne sau sună-ne — ne face plăcere să ajutăm!</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="contact.html" class="btn-primary px-8 py-3">Contactează-ne</a>
+          <a href="tel:+472999999" class="btn-secondary px-8 py-3">📞 Sună Acum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <!-- Brand -->
+        <div>
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778512224.png" alt="Awesome-GIM Logo" class="h-10 w-auto mb-4" />
+          <p class="text-secondary text-sm leading-relaxed mb-4">Sala de fitness #1 din Rădăuți. Transformăm corpuri și mentalități din 2016.</p>
+          <p class="text-secondary text-xs">📍 Str. Ștefan cel Mare Nr.88, Rădăuți</p>
+        </div>
+        <!-- Quick links -->
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Navigare</h4>
+          <a href="index.html" class="footer-link">Acasă</a>
+          <a href="about.html" class="footer-link">Despre Noi</a>
+          <a href="services.html" class="footer-link">Servicii</a>
+          <a href="galerie.html" class="footer-link">Galerie</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <!-- Services -->
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Servicii</h4>
+          <a href="services.html" class="footer-link">Antrenament Personal</a>
+          <a href="services.html" class="footer-link">Cursuri de Grup</a>
+          <a href="services.html" class="footer-link">Coaching Nutrițional</a>
+          <a href="services.html" class="footer-link">Zonă Cardio</a>
+          <a href="services.html" class="footer-link">Masaj Terapeutic</a>
+          <a href="services.html" class="footer-link">Kinetoterapie</a>
+        </div>
+        <!-- Social & Contact -->
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Rețele Sociale</h4>
+          <div class="flex gap-3 mb-5">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/p/%F0%9D%91%B2%F0%9D%91%B3%F0%9D%91%AB-%F0%9D%91%A9%F0%9D%91%AC%F0%9D%91%A8%F0%9D%91%BC%F0%9D%91%BB%F0%9D%92%80-%F0%9D%91%AA%F0%9D%91%B3%F0%9D%91%B0%F0%9D%91%B5%F0%9D%91%B0%F0%9D%91%AA-61584744534607" target="_blank" rel="noopener noreferrer" title="Facebook" class="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background:#1877F2;">
+              <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/kld_beauty_clinic/" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background:#E1306C;">
+              <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="white" stroke-width="2" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </a>
+            <!-- TikTok -->
+            <a href="https://tictok.com/" target="_blank" rel="noopener noreferrer" title="TikTok" class="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background:#010101;border:1px solid #333;">
+              <svg width="16" height="18" fill="white" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.37 6.37 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.73a4.85 4.85 0 0 1-1.01-.04z"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" title="YouTube" class="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background:#FF0000;">
+              <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#FF0000"/></svg>
+            </a>
+          </div>
+          <p class="text-secondary text-xs mb-1">📞 <a href="tel:+472999999" class="hover:text-primary transition-colors">+472 999 999</a></p>
+          <p class="text-secondary text-xs mb-1">✉️ <a href="mailto:tests@destine.app" class="hover:text-primary transition-colors">tests@destine.app</a></p>
+          <p class="text-secondary text-xs">🕐 Luni–Duminică 7:00–22:00</p>
+        </div>
+      </div>
+      <!-- Bottom row -->
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+        <p class="text-secondary text-xs">© 2025 Awesome-GIM. Toate drepturile rezervate.</p>
+        <div class="flex gap-5 items-center">
+          <a href="termeni.html" class="text-secondary text-xs hover:text-primary transition-colors">Termeni și Condiții</a>
+          <span class="text-secondary text-xs">|</span>
+          <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer" class="text-secondary text-xs hover:text-primary transition-colors">ANPC</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-btns">
+    <a href="tel:+472999999" class="float-btn float-btn-phone" aria-label="Sună acum">
+      <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.13 12.7a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="float-tooltip">Sună acum</span>
+    </a>
+    <a href="https://wa.me/472999999" target="_blank" rel="noopener noreferrer" class="float-btn float-btn-whatsapp" aria-label="WhatsApp">
+      <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      <span class="float-tooltip">WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Înapoi sus">
+    <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+
+<!-- SiteForge Contact Form -->
+<script>
+(function(){
+  var WH="https://n8n.midasplatform.ro/webhook/siteforge-contact";
+  var CT="eyJwYXlsb2FkIjoie1wiZW1haWxcIjpcImFjY291bnRzQGRlc3RpbmUuYXBwXCIsXCJidXNpbmVzc05hbWVcIjpcIkF3ZXNvbWUtR0lNXCIsXCJzaXRlSWRcIjpcImRmMDJmZGFkLWJiZjgtNDk1OC04YTI0LTFlMzdmMDU5ODI4ZFwifSIsImhtYWMiOiIzOGRiMGI2ZjZmNzQxNzI0ZjYwZWMxZTkzMjZjMmIyNDIwZmE4OWM2MjMxMTJmM2E0ODczMDQ2YWIyYzVhZDdlIn0=";
+  function init(){
+    document.querySelectorAll('form').forEach(function(form){
+      if(!form.querySelector('input[type="email"],input[name="email"]'))return;
+      if(form.dataset.sfDone)return;
+      form.dataset.sfDone='1';
+      form.dataset.sfTime=Date.now().toString();
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        var fd=new FormData(form),data={submission_time:form.dataset.sfTime||Date.now().toString(),contactToken:CT};
+        fd.forEach(function(v,k){data[k]=v;});
+        var btn=form.querySelector('button[type="submit"],button:last-of-type');
+        var orig=btn?btn.innerHTML:'';
+        if(btn){btn.disabled=true;btn.innerHTML='Se trimite...';}
+        fetch(WH,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+          .then(function(r){return r.json();})
+          .then(function(res){
+            if(res.success){
+              form.innerHTML='<div style="text-align:center;padding:2rem;color:#10b981;font-size:1.1rem">✓ '+(res.message||'Mesaj trimis!')+'</div>';
+            }else{
+              if(btn){btn.disabled=false;btn.innerHTML=orig;}
+              alert(res.message||'Eroare la trimitere. Încercați din nou.');
+            }
+          })
+          .catch(function(){
+            if(btn){btn.disabled=false;btn.innerHTML=orig;}
+            alert('Eroare de conexiune. Verificați internetul și încercați din nou.');
+          });
+      });
+    });
+  }
+  document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init();
+})();
+</script>
+</body>
+</html>

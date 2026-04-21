@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie | Awesome-GIM</title>
+  <meta name="description" content="Galeria foto Awesome-GIM din Rădăuți — echipamente, cursuri de grup, zone de antrenament și atmosfera sălii noastre de fitness." />
+  <meta property="og:title" content="Galerie | Awesome-GIM" />
+  <meta property="og:description" content="Galeria foto Awesome-GIM din Rădăuți — echipamente, cursuri de grup, zone de antrenament și atmosfera sălii noastre de fitness." />
+  <meta property="og:image" content="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3/1776778508767.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778512224.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0EA5E9",
+            secondary: "#94A3B8",
+            accent: "#0369a1",
+            light: "#f5f5f5",
+            dark: "#0c0e13",
+          },
+          backgroundImage: {
+            "dark-radial-right": "radial-gradient(at center right, #0a2233 10%, #020307 75%)",
+            "dark-radial-left": "radial-gradient(at center left, #0a2233 10%, #020307 75%)",
+            "dark-radial-top": "radial-gradient(at top center, #0a2233 10%, #020307 75%)",
+            "dark-radial-bottom": "radial-gradient(at bottom center, #0a2233 10%, #020307 75%)",
+            "dark-silver-radial": "radial-gradient(at center, #1a1a1a 10%, #2a2a2a 90%)",
+            "card-dark": "linear-gradient(180deg, #1a1f2b 0%, #0c0e13 100%)",
+            "card-dark-hover": "linear-gradient(180deg, #2a3040 0%, #1a1f2b 100%)",
+            "primary-blend": "linear-gradient(135deg, #0EA5E9 0%, #020307 100%)",
+            "accent-blend": "linear-gradient(135deg, #0369a1 0%, #000000 100%)",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Lightbox styles */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 99999;
+      align-items: center;
+      justify-content: center;
+    }
+    #lightbox.open { display: flex; }
+    #lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 1rem; object-fit: contain; box-shadow: 0 0 60px rgba(14,165,233,0.3); }
+    #lightbox-close { position: absolute; top: 1.5rem; right: 1.5rem; background: rgba(14,165,233,0.2); border: none; color: white; font-size: 2rem; cursor: pointer; border-radius: 50%; width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+    #lightbox-close:hover { background: #0EA5E9; }
+  </style>
+</head>
+<body class="bg-dark text-light font-serif">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar-glass fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778512224.png" alt="Awesome-GIM Logo" class="h-10 w-auto" />
+        </a>
+        <div class="hidden md:flex items-center gap-7">
+          <a href="index.html" class="nav-link text-light text-sm font-semibold tracking-wide">Acasă</a>
+          <a href="about.html" class="nav-link text-light text-sm font-semibold tracking-wide">Despre</a>
+          <a href="services.html" class="nav-link text-light text-sm font-semibold tracking-wide">Servicii</a>
+          <a href="galerie.html" class="nav-link text-light text-sm font-semibold tracking-wide">Galerie</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-5">Contact</a>
+        </div>
+        <button id="hamburger" class="md:hidden flex flex-col justify-center items-center w-9 h-9 gap-1.5 hamburger-lines" aria-label="Meniu" aria-expanded="false">
+          <span class="w-6"></span>
+          <span class="w-6"></span>
+          <span class="w-6"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html" class="nav-link">Acasă</a>
+      <a href="about.html" class="nav-link">Despre</a>
+      <a href="services.html" class="nav-link">Servicii</a>
+      <a href="galerie.html" class="nav-link">Galerie</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="relative z-10">
+      <div class="section-badge">Vizualizează</div>
+      <h1 class="text-4xl md:text-6xl font-bold text-white mt-3 mb-4">Galeria<br/><span class="text-primary">Awesome-GIM</span></h1>
+      <p class="text-secondary text-lg max-w-2xl mx-auto leading-relaxed">Descoperă spațiile, echipamentele și atmosfera unică a sălii noastre din Rădăuți.</p>
+    </div>
+  </div>
+
+  <!-- GALLERY FILTER + GRID -->
+  <section class="py-20 bg-dark-radial-top">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <!-- Filter buttons -->
+      <div class="flex flex-wrap gap-3 justify-center mb-12 fade-in">
+        <button class="filter-btn active-filter px-5 py-2 rounded-full text-sm font-semibold border border-primary/40 transition-all" data-filter="all" style="background:linear-gradient(135deg,#0EA5E9,#0369a1);color:white;border-color:#0EA5E9;">Toate</button>
+        <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-primary/40 text-secondary hover:text-primary transition-all" data-filter="sala" style="background:rgba(26,31,43,0.8);">Sala Fitness</button>
+        <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-primary/40 text-secondary hover:text-primary transition-all" data-filter="cardio" style="background:rgba(26,31,43,0.8);">Zonă Cardio</button>
+        <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-primary/40 text-secondary hover:text-primary transition-all" data-filter="grup" style="background:rgba(26,31,43,0.8);">Cursuri Grup</button>
+        <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-primary/40 text-secondary hover:text-primary transition-all" data-filter="spa" style="background:rgba(26,31,43,0.8);">Masaj & Spa</button>
+      </div>
+
+      <!-- Gallery grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Row 1 -->
+        <div class="gallery-card gallery-item cursor-pointer fade-in h-64" data-category="sala" onclick="openLightbox(this)">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778531386.png" alt="Sala Fitness Awesome-GIM" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Sala de Fitness</span>
+          </div>
+        </div>
+
+        <div class="gallery-card gallery-item cursor-pointer fade-in h-64" data-category="cardio" onclick="openLightbox(this)">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3/1776778508767.jpg" alt="Zonă Cardio" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Zonă Cardio</span>
+          </div>
+        </div>
+
+        <div class="gallery-card gallery-item cursor-pointer fade-in h-64" data-category="grup" onclick="openLightbox(this)">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778518908.png" alt="Cursuri de Grup" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Cursuri de Grup</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="gallery-card gallery-item cursor-pointer fade-in h-64 lg:col-span-2" data-category="sala" onclick="openLightbox(this)">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778537806.png" alt="Echipamente Fitness" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Echipamente Premium</span>
+          </div>
+        </div>
+
+        <div class="gallery-card gallery-item cursor-pointer fade-in h-64" data-category="spa" onclick="openLightbox(this)">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778554130.png" alt="Zona Masaj" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Zona Masaj & Recuperare</span>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gallery-card gallery-item cursor-pointer fade-in h-64" data-category="spa" onclick="openLightbox(this)">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778554130.png" alt="Kinetoterapie" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Servicii Kinetoterapie</span>
+          </div>
+        </div>
+
+        <div class="gallery-card gallery-item cursor-pointer fade-in h-64" data-category="cardio" onclick="openLightbox(this)">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3/1776778508767.jpg" alt="Antrenament Cardio" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Antrenament Cardio</span>
+          </div>
+        </div>
+
+        <div class="gallery-card gallery-item cursor-pointer fade-in h-64" data-category="grup" onclick="openLightbox(this)">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778531386.png" alt="Yoga și Pilates" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Yoga & Pilates</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-primary-blend">
+    <div class="max-w-3xl mx-auto px-4 text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Îți place ce vezi?</h2>
+      <p class="text-blue-100 text-lg mb-8 leading-relaxed">Vino să experimentezi personal atmosfera Awesome-GIM. Prima vizită este gratuită!</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn-primary text-base px-8 py-3" style="background:white;color:#0EA5E9;">Programează o Vizită</a>
+        <a href="services.html" class="btn-secondary border-white text-white text-base px-8 py-3" style="border-color:white;color:white;">Vezi Serviciile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-b75ac7b5-a61c-40fb-83b8-2c3bfa3e91f3-1776778512224.png" alt="Awesome-GIM Logo" class="h-10 w-auto mb-4" />
+          <p class="text-secondary text-sm leading-relaxed mb-4">Sala de fitness #1 din Rădăuți. Transformăm corpuri și mentalități din 2016.</p>
+          <p class="text-secondary text-xs">📍 Str. Ștefan cel Mare Nr.88, Rădăuți</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Navigare</h4>
+          <a href="index.html" class="footer-link">Acasă</a>
+          <a href="about.html" class="footer-link">Despre Noi</a>
+          <a href="services.html" class="footer-link">Servicii</a>
+          <a href="galerie.html" class="footer-link">Galerie</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Servicii</h4>
+          <a href="services.html" class="footer-link">Antrenament Personal</a>
+          <a href="services.html" class="footer-link">Cursuri de Grup</a>
+          <a href="services.html" class="footer-link">Coaching Nutrițional</a>
+          <a href="services.html" class="footer-link">Masaj Terapeutic</a>
+          <a href="services.html" class="footer-link">Kinetoterapie</a>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Rețele Sociale</h4>
+          <div class="flex gap-3 mb-5">
+            <a href="https://www.facebook.com/p/%F0%9D%91%B2%F0%9D%91%B3%F0%9D%91%AB-%F0%9D%91%A9%F0%9D%91%AC%F0%9D%91%A8%F0%9D%91%BC%F0%9D%91%BB%F0%9D%92%80-%F0%9D%91%AA%F0%9D%91%B3%F0%9D%91%B0%F0%9D%91%B5%F0%9D%91%B0%F0%9D%91%AA-61584744534607" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background:#1877F2;">
+              <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/kld_beauty_clinic/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background:#E1306C;">
+              <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="white" stroke-width="2" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://tictok.com/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background:#010101;border:1px solid #333;">
+              <svg width="16" height="18" fill="white" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.37 6.37 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.73a4.85 4.85 0 0 1-1.01-.04z"/></svg>
+            </a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background:#FF0000;">
+              <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#FF0000"/></svg>
+            </a>
+          </div>
+          <p class="text-secondary text-xs mb-1">📞 <a href="tel:+472999999" class="hover:text-primary transition-colors">+472 999 999</a></p>
+          <p class="text-secondary text-xs mb-1">✉️ <a href="mailto:tests@destine.app" class="hover:text-primary transition-colors">tests@destine.app</a></p>
+          <p class="text-secondary text-xs">🕐 Luni–Duminică 7:00–22:00</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+        <p class="text-secondary text-xs">© 2025 Awesome-GIM. Toate drepturile rezervate.</p>
+        <div class="flex gap-5 items-center">
+          <a href="termeni.html" class="text-secondary text-xs hover:text-primary transition-colors">Termeni și Condiții</a>
+          <span class="text-secondary text-xs">|</span>
+          <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer" class="text-secondary text-xs hover:text-primary transition-colors">ANPC</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Imagine mărită">
+    <button id="lightbox-close" aria-label="Închide">✕</button>
+    <img id="lightbox-img" src="" alt="Galerie Awesome-GIM" />
+  </div>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-btns">
+    <a href="tel:+472999999" class="float-btn float-btn-phone" aria-label="Sună acum">
+      <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.13 12.7a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="float-tooltip">Sună acum</span>
+    </a>
+    <a href="https://wa.me/472999999" target="_blank" rel="noopener noreferrer" class="float-btn float-btn-whatsapp" aria-label="WhatsApp">
+      <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      <span class="float-tooltip">WhatsApp</span>
+    </a>
+  </div>
+
+  <button id="back-to-top" aria-label="Înapoi sus">
+    <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script>
+    // Gallery items need relative positioning for overlay
+    document.querySelectorAll('.gallery-item').forEach(function(el){
+      el.style.position = 'relative';
+    });
+    // Lightbox
+    function openLightbox(el) {
+      var img = el.querySelector('img');
+      if (!img) return;
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    document.getElementById('lightbox-close').addEventListener('click', function(){
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    document.getElementById('lightbox').addEventListener('click', function(e){
+      if (e.target === this) {
+        this.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+
+  <script src="main.js"></script>
+
+<!-- SiteForge Contact Form -->
+<script>
+(function(){
+  var WH="https://n8n.midasplatform.ro/webhook/siteforge-contact";
+  var CT="eyJwYXlsb2FkIjoie1wiZW1haWxcIjpcImFjY291bnRzQGRlc3RpbmUuYXBwXCIsXCJidXNpbmVzc05hbWVcIjpcIkF3ZXNvbWUtR0lNXCIsXCJzaXRlSWRcIjpcImRmMDJmZGFkLWJiZjgtNDk1OC04YTI0LTFlMzdmMDU5ODI4ZFwifSIsImhtYWMiOiIzOGRiMGI2ZjZmNzQxNzI0ZjYwZWMxZTkzMjZjMmIyNDIwZmE4OWM2MjMxMTJmM2E0ODczMDQ2YWIyYzVhZDdlIn0=";
+  function init(){
+    document.querySelectorAll('form').forEach(function(form){
+      if(!form.querySelector('input[type="email"],input[name="email"]'))return;
+      if(form.dataset.sfDone)return;
+      form.dataset.sfDone='1';
+      form.dataset.sfTime=Date.now().toString();
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        var fd=new FormData(form),data={submission_time:form.dataset.sfTime||Date.now().toString(),contactToken:CT};
+        fd.forEach(function(v,k){data[k]=v;});
+        var btn=form.querySelector('button[type="submit"],button:last-of-type');
+        var orig=btn?btn.innerHTML:'';
+        if(btn){btn.disabled=true;btn.innerHTML='Se trimite...';}
+        fetch(WH,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+          .then(function(r){return r.json();})
+          .then(function(res){
+            if(res.success){
+              form.innerHTML='<div style="text-align:center;padding:2rem;color:#10b981;font-size:1.1rem">✓ '+(res.message||'Mesaj trimis!')+'</div>';
+            }else{
+              if(btn){btn.disabled=false;btn.innerHTML=orig;}
+              alert(res.message||'Eroare la trimitere. Încercați din nou.');
+            }
+          })
+          .catch(function(){
+            if(btn){btn.disabled=false;btn.innerHTML=orig;}
+            alert('Eroare de conexiune. Verificați internetul și încercați din nou.');
+          });
+      });
+    });
+  }
+  document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init();
+})();
+</script>
+</body>
+</html>
