@@ -420,5 +420,47 @@
   document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init();
 })();
 </script>
+
+<!-- SiteForge Contact Form -->
+<script>
+(function(){
+  var WH="https://n8n.midasplatform.ro/webhook/siteforge-contact";
+  var CT="eyJwYXlsb2FkIjoie1wiZW1haWxcIjpcIm1hcml1cy5wcnV0ZWFuQG91dGxvb2suY29tXCIsXCJidXNpbmVzc05hbWVcIjpcIkF3ZXNvbWUtR0lNXCIsXCJzaXRlSWRcIjpcImRmMDJmZGFkLWJiZjgtNDk1OC04YTI0LTFlMzdmMDU5ODI4ZFwifSIsImhtYWMiOiJkNzg1NTg5MTNlZmQyMzcyY2Q5NTBiMTE2Y2FmMjE5M2Q1ZWY2ZmRlM2M4ZjNhYWRhNTdlYzU2YmMwYzI4NzZiIn0=";
+  var WK="Midassiteforge1984!";
+  function init(){
+    document.querySelectorAll('form').forEach(function(form){
+      if(!form.querySelector('input[type="email"],input[name="email"]'))return;
+      if(form.dataset.sfDone)return;
+      form.dataset.sfDone='1';
+      form.dataset.sfTime=Date.now().toString();
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        var fd=new FormData(form),data={submission_time:form.dataset.sfTime||Date.now().toString(),contactToken:CT};
+        fd.forEach(function(v,k){data[k]=v;});
+        var btn=form.querySelector('button[type="submit"],button:last-of-type');
+        var orig=btn?btn.innerHTML:'';
+        if(btn){btn.disabled=true;btn.innerHTML='Se trimite...';}
+        var headers={'Content-Type':'application/json'};
+        if(WK) headers['X-Webhook-Key']=WK;
+        fetch(WH,{method:'POST',headers:headers,body:JSON.stringify(data)})
+          .then(function(r){return r.json();})
+          .then(function(res){
+            if(res.success){
+              form.innerHTML='<div style="text-align:center;padding:2rem;color:#10b981;font-size:1.1rem">✓ '+(res.message||'Mesaj trimis!')+'</div>';
+            }else{
+              if(btn){btn.disabled=false;btn.innerHTML=orig;}
+              alert(res.message||'Eroare la trimitere. Încercați din nou.');
+            }
+          })
+          .catch(function(){
+            if(btn){btn.disabled=false;btn.innerHTML=orig;}
+            alert('Eroare de conexiune. Verificați internetul și încercați din nou.');
+          });
+      });
+    });
+  }
+  document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init();
+})();
+</script>
 </body>
 </html>
