@@ -1,6 +1,6 @@
 # Awesome-GIM
 
-🌐 **Live:** [https://awesome-gim-1776843843671.netlify.app](https://awesome-gim-1776843843671.netlify.app)
+🌐 **Live:** [https://awesome-gim-1776844071756.netlify.app](https://awesome-gim-1776844071756.netlify.app)
 
 Site generat cu **SiteForge** — HTML5 + Tailwind CSS CDN + Vanilla JavaScript.
 Nu necesită build step — fișierele se servesc direct.
